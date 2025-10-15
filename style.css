@@ -1,0 +1,15 @@
+header.banner {
+  position: relative;
+  background-image: url("VANESSA perez.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 56vh;
+  height:80%;
+
+  display: flex;
+  flex-direction: column; /* stack text vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem; /* space between title and subtitle*
+      }
