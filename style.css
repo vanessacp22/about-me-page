@@ -1,15 +1,48 @@
-header.banner {
+.hero 
+{
   position: relative;
-  background-image: url("VANESSA perez.svg");
-  background-position: center;
+  background-image: url("hero.png");
+  background-position: center 30%;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 56vh;
-  height: 2000px;%;
-
+  min-height: 90vh;
+  height:1000px;
   display: flex;
-  flex-direction: column; /* stack text vertically */
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem; /* space between title and subtitle*
-      }
+  width: ;
+
+}
+.full-width-bar {
+  width: 100vw; /* Spans the full width of its parent (the body) */
+  background-color: #1c1c1cbf;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 50px; /* Vertically centers text */
+}
+  
+.nav-bar{
+  padding-right: 10rem;
+}
+
+.hero .content {
+  color: #fff;
+  text-align: left;
+  padding: 7rem;
+  padding-left: 5rem;
+  max-width: 700px;
+  z-index: 2;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.nav-item{
+  font-family: "Roboto Mono", monospace;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 15px;
+  
+
+}
+
