@@ -1,48 +1,84 @@
-.hero 
-{
+.hero {
   position: relative;
   background-image: url("hero.png");
   background-position: center 30%;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 90vh;
-  height:1000px;
+  height: 1000px;
   display: flex;
-  width: ;
+  width: 100%;
 
 }
-.full-width-bar {
-  width: 100vw; /* Spans the full width of its parent (the body) */
-  background-color: #1c1c1cbf;
-  height: 100px;
-  color: white;
-  text-align: center;
-  line-height: 50px; /* Vertically centers text */
+
+.shiny-text {
+  color: #f3ededf1;
+  /* Adjust this color to change intensity/style */
+  background: linear-gradient(120deg,
+      rgba(10, 10, 10, 0.906) 40%,
+      rgb(33, 23, 3) 50%,
+      rgba(232, 233, 230, 0.903) 60%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
 }
-  
-.nav-bar{
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
+
+
+
+.nav-bar {
   padding-right: 10rem;
 }
 
 .hero .content {
   color: #fff;
+  justify-content: flex-start;
   text-align: left;
+  padding-top: 0%;
   padding: 7rem;
   padding-left: 5rem;
   max-width: 700px;
   z-index: 2;
-  font-family: "Roboto Mono", monospace;
   font-size: 30px;
   font-weight: <weight>;
   font-style: normal;
 }
 
-.nav-item{
+.nav-item {
   font-family: "Roboto Mono", monospace;
   font-weight: <weight>;
   font-style: normal;
   font-size: 15px;
-  
+
 
 }
 
+
+.plug {
+  position: relative;
+  background-image: url("socials.jpg");
+  background-position: center 30%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+
+}
