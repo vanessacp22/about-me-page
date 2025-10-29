@@ -26,8 +26,8 @@
     <div class="container-fluid">
       <ul class="nav justify-content-end">
         <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">BodyRok</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="bodyrok.html">BodyRok</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
       </ul>
@@ -36,8 +36,40 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <div class="card-container">
+    <div class="hero-content"><main class="main-container">
+  <svg class="svg-container">
+    <defs>
+      <filter id="turbulent-displace" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
+        <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+          <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
+        <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+          <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
+        <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+          <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
+        <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+          <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
+        <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
+        <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
+
+        <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="card-container">
     <div class="inner-container">
       <div class="border-outer">
         <div class="main-card"></div>
@@ -53,111 +85,125 @@
     <div class="content-container">
       <div class="content-top">
         <div class="scrollbar-glass">
-          Vee Lab Solutions
+          Vee lab solutions
         </div>
-        <p class="title">Hi im Vee!</p>
+        <p class="title">Hey, I'm Vee</p>
       </div>
 
-      <hr class="divider" />
+      <hr class="divider">
 
       <div class="content-bottom">
-        <p class="description">Engineering student. Bodyrok trainer. UX/UI designer.<br>Every build — digital or physical — starts with intention and ends in precision.</p>
+        <p class="description">Engineering student. Bodyrok trainer. UX/UI designer.
+I built myself from the ground up. As the first in my family to step into tech, I’ve had to create my own blueprint — learning, iterating, and wiring both code and confidence from scratch. My parents are first-generation, and their drive shaped mine.
+
+Every build — digital or physical — starts with intention and ends in precision. I design with structure, move with purpose, and engineer with a kind of grit that can’t be taught.</p>
       </div>
     </div>
   </div>
-      
-    </div>
+</main>     
   </section>
   
-  <section class="break"><div>BE THE CHANGE YOU WANT TO SEE IN THE WORLD<br>Challenging the dominant narrative since '04</div></section>
+  <section class="break"><div>Turning ideas into impact since ’04.</div></section>
 
-  <section class="carousel"><div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+   <section class="swing">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="800">
-      <img src="harddrive.jpeg" class="d-block w-100 h-300 " alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="800">
-      <img src="pilates.jpeg" class="d-block w-100 h-300" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
+    <div class="carousel-item active">
+      <img src="harddrive.jpeg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="dance.jpg" class="d-block w-100 h-300" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+      <img src="dance.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pilates.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="br.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="couch.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="tom.jpeg" class="d-block w-100" alt="...">
+    </div>
+     <div class="carousel-item">
+      <img src="comp.jpeg" class="d-block w-100" alt="...">
+    </div>
+     <div class="carousel-item">
+      <img src="kick.jpeg" class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button></section>
 </div></section>
 
 
+<section class="arcade"></section>
 
 
+<!-- CARDS EXAMPLE (3-column layout) -->
+<section class="arcade my-5 py-5"
+         style="position:relative; z-index:20; isolation:isolate; background:#0b0b0b;">
+  <div class="container">
+    <div class="row justify-content-center g-4">
 
-
-  <!-- CARDS EXAMPLE -->
-  <section class="arcade container my-5">  </section>
-    <container>
-    <div class="row g-4 mt-1">
-      <div class="col-sm-6">
-        <div class="card h-100 w-100">
-          <iframe src="https://pythonsandbox.com/code/pythonsandbox_u164941_1iEgIshpvTK5omJfqKFHsyYz_v0.py" width="1000px" height="700px"></iframe>
+      <!-- Card 1 -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card shadow-lg w-100 h-100">
+          <iframe src="https://pythonsandbox.com/code/pythonsandbox_u164941_1iEgIshpvTK5omJfqKFHsyYz_v0.py"
+            width="100%" height="350" style="border:none; border-radius:12px;"></iframe>
           <div class="card-body">
             <h5 class="card-title">Popping Circles</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="https://pythonsandbox.com/code/pythonsandbox_u164941_1iEgIshpvTK5omJfqKFHsyYz_v0.py" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">A playful experiment in generative motion...</p>
+            <a href="https://pythonsandbox.com/code/pythonsandbox_u164941_1iEgIshpvTK5omJfqKFHsyYz_v0.py" class="btn btn-primary">
+              Run Code
+            </a>
           </div>
         </div>
       </div>
-    </div></container>
-  
-    <container>
-    <div class="row g-4 mt-1">
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <iframe src="https://pythonsandbox.com/code/pythonsandbox_u158616_khebouxlonSXKM37Z0xiFRan_v2.py" width="1000px" height="700px"></iframe>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card shadow-lg w-100 h-100">
+          <iframe src="https://pythonsandbox.com/code/pythonsandbox_u158616_khebouxlonSXKM37Z0xiFRan_v2.py"
+            width="100%" height="350" style="border:none; border-radius:12px;"></iframe>
           <div class="card-body">
             <h5 class="card-title">Honey Comb</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="https://pythonsandbox.com/code/pythonsandbox_u158616_khebouxlonSXKM37Z0xiFRan_v2.py" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">This program uses Python’s Turtle library to draw a structured honeycomb pattern...</p>
+            <a href="https://pythonsandbox.com/code/pythonsandbox_u158616_khebouxlonSXKM37Z0xiFRan_v2.py" class="btn btn-primary">
+              Run Code
+            </a>
           </div>
         </div>
       </div>
-    </div></container>
-     <container>
-    <div class="row g-4 mt-1">
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <iframe src="https://pythonsandbox.com/code/pythonsandbox_u18452_JwBnZOA7CHmsZVcQ6DGQjmEV_v1.py" width="1000px" height=""></iframe>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card shadow-lg w-100 h-100">
+          <iframe src="https://pythonsandbox.com/code/pythonsandbox_u18452_JwBnZOA7CHmsZVcQ6DGQjmEV_v1.py"
+            width="100%" height="350" style="border:none; border-radius:12px;"></iframe>
           <div class="card-body">
             <h5 class="card-title">Flower</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="https://pythonsandbox.com/code/pythonsandbox_u18452_JwBnZOA7CHmsZVcQ6DGQjmEV_v1.py" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">This sketch builds a full flower using nothing but circles—petals arranged by angle and offset...</p>
+            <a href="https://pythonsandbox.com/code/pythonsandbox_u18452_JwBnZOA7CHmsZVcQ6DGQjmEV_v1.py" class="btn btn-primary">
+              Run Code
+            </a>
           </div>
         </div>
       </div>
-    </div></container>
-  </section>
-  
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="plug"></section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

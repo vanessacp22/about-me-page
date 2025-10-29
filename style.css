@@ -195,7 +195,7 @@ body {
   border: 2px solid var(--electric-border-color);
   margin-top: -4px;
   margin-left: -4px;
-  filter: url(#turbulent-displace);
+  filter: url('#turbulent-displace');
 }
 
 /* Glow effects */
@@ -407,9 +407,7 @@ body {
   padding-bottom: 4px;
   width: 100%;
 }
-.carousel-inner {
-  height: 400px;
-}
+
 .hero-abt{
   background-image: url("abt.jpg");
 }

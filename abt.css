@@ -1,9 +1,10 @@
 .hero-abt {
   position: relative;
   background-image: url("abt.jpg");
- background-size: cover;
-  background-position: center;
+  background-size: cover;
+  background-position: center 0%;
   min-height: 90vh;
+  height: 800px;
   display: flex;
 }
 
@@ -27,6 +28,7 @@
   padding: 0;
 }
 
+
 .nav-link {
   color: #e9e9e9 !important;
   transition: color 0.3s ease;
@@ -34,4 +36,36 @@
 
 .nav-link:hover {
   color: #ffffff !important;
+}
+.body {
+    background-color: rgb(65, 115, 160);
+}
+.text-block {
+  margin: 7vw;
+  max-width: 800px;
+  font-family: monospace;
+  font-size: clamp(14px, 4vw, 32px);
+  color: #fff;
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}
+.proj {
+    background: url('Black\ and\ White\ Classic\ Coming\ Soon\ Banner.jpg');
+    background-size: cover;
+  background-position: center 0%;
+  min-height: 90vh;
+  height: 800px;
+  display: flex;
+}
+
+.bawdy {
+    background: url('bdyrk.jpg');
+    background-size: cover;
+  background-position: center 0%;
+  min-height: 90vh;
+  height: 800px;
+  display: flex;
 }
