@@ -23,11 +23,12 @@
 
 .nav-item {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 25px;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
   font-style: normal;
   padding: 0;
 }
-
 
 .nav-link {
   color: #e9e9e9 !important;
@@ -38,7 +39,7 @@
   color: #ffffff !important;
 }
 .body {
-    background-color: rgb(65, 115, 160);
+  background-color: rgb(65, 115, 160);
 }
 .text-block {
   margin: 7vw;
@@ -53,8 +54,8 @@
   display: inline-block;
 }
 .proj {
-    background: url('Black\ and\ White\ Classic\ Coming\ Soon\ Banner.jpg');
-    background-size: cover;
+  background: url("Black\ and\ White\ Classic\ Coming\ Soon\ Banner.jpg");
+  background-size: cover;
   background-position: center 0%;
   min-height: 90vh;
   height: 800px;
@@ -62,8 +63,8 @@
 }
 
 .bawdy {
-    background: url('bdyrk.jpg');
-    background-size: cover;
+  background: url("bdyrk.jpg");
+  background-size: cover;
   background-position: center 0%;
   min-height: 90vh;
   height: 800px;

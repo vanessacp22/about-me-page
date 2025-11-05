@@ -434,3 +434,12 @@ body {
 .carry {
   height: 600px;
 }
+
+.stylet {
+  font-family: "Special Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
