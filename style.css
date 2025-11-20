@@ -22,9 +22,7 @@ body {
 
 .nav-item {
   font-weight: bold;
-  font-size: 25px;
-  font-family: "Jersey 15", sans-serif;
-  font-weight: 400;
+  font-size: 15px;
   font-style: normal;
   padding: 0;
 }
@@ -431,15 +429,4 @@ body {
 .b-content {
   text-align: center;
 }
-.carry {
-  height: 600px;
-}
-
-.stylet {
-  font-family: "Special Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
+ 
